@@ -10,13 +10,13 @@
 <body>
 
 
-{% for row in range(0,row)%}
+{% for row in range(0,rows)%}
     <div class="row">
-        {% for col in range(0,col)%}
+        {% for col in range(0,cols)%}
             {% if(row+col) % 2 == 0 %}
-                <div class="square" style="background-color: {{c1}};"></div>
+                <div class="square" style="background-color: {{color1}};"></div>
             {% else %}
-                <div class="square" style="background-color: {{c2}};"></div> 
+                <div class="square" style="background-color: {{color2}};"></div> 
             {% endif %} 
         {%endfor%}     
             
